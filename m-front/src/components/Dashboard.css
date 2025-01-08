@@ -1,0 +1,107 @@
+  .dashboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .welcome-message {
+    font-size: 24px;
+    color: #0076C0;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section {
+    margin-top: 20px;
+  }
+  
+  .profile-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  /* Buttons */
+  .edit-btn,
+  .save-btn,
+  .cancel-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-btn {
+    background-color: #0076C0;
+    color: #ffffff;
+  }
+  
+  .edit-btn:hover {
+    background-color: #005f99;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Form Styling */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .form-input {
+    padding: 12px 15px;
+    border: 2px solid #d1d8e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #0076C0;
+    box-shadow: 0 0 5px rgba(0, 118, 192, 0.4);
+  }
+  
+  /* Messages */
+  .message-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #0076C0;
+  }
+  
+  .loading-text {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+  }
+  
