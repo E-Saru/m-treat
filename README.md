@@ -91,7 +91,6 @@ This project is a full-stack application for managing patient information. It in
 
 ---
 ## API Endpoints
-### Authentication
 - **POST** `api/register`: Create a new user account.
  - Request Body: `name`, `email`, `phone`, `password`
 - **POST** `api/login`: Login to an existing user account.
