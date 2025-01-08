@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
-import { setPatientData } from '../redux/slices/authSlice';
+import { setPatientData, logout  } from '../redux/slices/authSlice';
 import './Dashboard.css'; // Import custom styles
 
 const Dashboard = () => {
@@ -46,6 +46,11 @@ const Dashboard = () => {
     } catch (error) {
       setMessage('Update failed. Please try again.');
     }
+  };
+
+  const handleLogout = () => {
+    dispatch(logout());
+    setMessage('Logged out successfully.');
   };
 
   if (!patientData) return <p className="loading-text">Loading...</p>;
@@ -100,6 +105,9 @@ const Dashboard = () => {
           </form>
         )}
       </div>
+      <button onClick={handleLogout} className="cancel-btn">
+        Logout
+      </button>
       {message && <p className="message-text">{message}</p>}
     </div>
   );

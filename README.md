@@ -99,7 +99,6 @@ This project is a full-stack application for managing patient information. It in
 - **GET** `api/dashboard`: Get the current user's information.
 - **PUT** `api/dashboard`: Update the current user's profile information.
  - Request Body: `name`, `phone`
-- **POST /logout**: Logout of the current user account.
 
 ## Project Structure
 ```m-treat/
